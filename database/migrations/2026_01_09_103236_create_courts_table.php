@@ -13,9 +13,9 @@ return new class extends Migration
 {
     Schema::create('courts', function (Blueprint $table) {
         $table->id();
-        $table->string('name'); // Nama Lapangan 
-        $table->enum('floor_type', ['Karpet', 'Kayu']); // Jenis Lantai: Karpet/Kayu 
-        $table->string('photo')->nullable(); // Foto Lapangan 
+        $table->string('name'); 
+        $table->enum('floor_type', ['Karpet', 'Kayu']);
+        $table->string('photo')->nullable();
         $table->timestamps();
     });
 }

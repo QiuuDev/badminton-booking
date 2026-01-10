@@ -11,8 +11,8 @@ class Equipment extends Model
     protected $table = 'equipments';
 
     protected $fillable = [
-        'item_name', 
-        'price_per_session', 
+        'name', 
+        'price', 
         'stock'
     ];
 }

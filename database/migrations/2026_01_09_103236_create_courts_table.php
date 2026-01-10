@@ -16,6 +16,7 @@ return new class extends Migration
         $table->string('name'); 
         $table->enum('floor_type', ['Karpet', 'Kayu']);
         $table->string('photo')->nullable();
+        $table->integer('price_per_hour');
         $table->timestamps();
     });
 }
